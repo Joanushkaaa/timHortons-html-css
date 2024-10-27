@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'proxima-nova', 'Helvetica', 'Ariel', sans-serif;
+    color: #757575;
+    /*
+    background-color: #fbf6ede1;*/
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*HEADER & FOOTER*/
+a {
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 200;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+.line {
+    display: flex;
+    border-bottom: 1px solid #bab9b9;
+    overflow: hidden;
+}
+.left {
+    display: inline-flex;
+    height: 30px;
+    margin: 0 5% 0 17%;
+    /*background-color: #a11326;*/
+}
+.right {
+    display: inline-flex;
+    color: #d0cece;
+}
+header {
+    background-color: white;
+}
+header a {
+    color:#747373;
+}
+footer {
+    background-color: #a11326;
+    height: 50px;
+}
+footer a {
+    color: white;
+}
+
+/*BANNER*/
+#banner {
+    width: 100%;
+    overflow: hidden;
+}
+h1 {
+    font-weight: light;
+    font-size: 1.825rem;
+    font-weight: 400;
+    color: #0A0A0A;
+    letter-spacing: 1px;
+    padding: 50px 0 10px 0;
+    margin-left: 17%;
+}
+#row {
+    width: 100%;
+    background-color: white;
+}
+#banner img {
+    height: 490px;
+    background-size: cover;
+}
+#banner-foot {
+    display: flexbox;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #bab9b9;
+}
+#banner-foot a {
+    display: inline-flexbox;
+    font-size: 1.125rem;
+    padding: 10px;
+}
+#banner a:hover {
+    color:#a11326;
+    text-decoration: none;
+}
+
+
+/*SEARCH*/
+#search {
+    text-align: center;
+    border-bottom: 1px solid #bab9b9;
+    padding-bottom: 20px;
+    margin: 0 20%;
+}
+.button {
+    border-radius: 20px;
+    border: none;
+    font-family: 'proxima-nova', 'Helvetica', 'Ariel', sans-serif;
+    font-size: 16px;
+    color: #757575;
+    background-color: #e8e3dae1;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.button-container a {
+    display: inline-flexbox;
+    font-size: 1.125rem;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+#search a:hover {
+    color:#a11326
+}
+#search p {
+    margin: 20px 0; 
+}
+
+/*HOT BEVERAGES*/
+h2 {
+    font-weight: lighter;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #0A0A0A;
+    letter-spacing: 1px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.products {
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.box {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 240px;
+    margin: 0 1.5% 1.25rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 8px hsl(0deg 0% 46% / 25%);
+    background-color: #fefefe;
+}
+.box img {
+    width: 80%;
+    height: 170px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-top: 15px;
+}
+
+
+/*FOOTER*/
+footer {
+    align-items: center;
+}
+footer img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+footer a {
+    font-size: 12px;
+    padding: 10px 5px 5px 5px;
+    align-items: center;
+}
+footer p {
+    font-size: 10px;
+    align-items: center; 
+    color: white;  
+    padding: 20px 5px 0px 5px;
+}
+
+
+/*MEDIA QUERY*/
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+        width: 100%;
+    }
+    .products {
+
+    }
+    .box {
+
+    }
+    .box img {
+        
+    }
+}
+  
+/* Media Query for low resolution Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+    .products {
+
+    }
+    .box {
+
+    }
+    .box img {
+        
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+    .products {
+
+    }
+    .box {
+
+    }
+    .box img {
+        
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
+    .products {
+        width: 70%;
+        align-items: center;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .box {
+        position: relative;
+        display: inline-block;
+
+        height: 200px;
+        margin: 0 1.5% 1.25rem;
+        font-size: 1rem;
+    }
+    .box img {
+
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    body {
+        background-color: rgb(162, 39, 173);
+    }
+    .box {
+        max-height: 240px;
+        min-height: 220px;
+    }
+    .box img {
+        min-height: fit-content;
+    }
+}
